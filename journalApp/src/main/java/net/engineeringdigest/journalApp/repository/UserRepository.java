@@ -8,4 +8,5 @@ public interface UserRepository extends MongoRepository<User, ObjectId> {
      int num=500;
      User findByUserName(String username);
 
+     void deleteByUserName(String username);
 }
